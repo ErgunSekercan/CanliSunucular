@@ -102,7 +102,7 @@ public class CanliSunucular {
     @Test
 
     public void sunucu4() throws InterruptedException {
-        try {
+
             WebDriver driver = new ChromeDriver();
             driver.get(ConfigurationReader.getProperty("app4"));
             driver.manage().window().maximize();
@@ -123,9 +123,7 @@ public class CanliSunucular {
             Assert.assertEquals("SİSTEM HESABI - KOLAYSOFT TEKNİK",kolay);
             System.out.println("Giriş işlemi başarılı. Sunucu4 çalışıyor");
             driver.quit();
-        }catch (Exception e){
-            System.out.println("Sunucu4 Bozuk");
-        }
+
     }
 
 }
