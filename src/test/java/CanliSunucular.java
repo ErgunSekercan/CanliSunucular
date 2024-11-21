@@ -126,7 +126,6 @@ public class CanliSunucular {
         }catch (Exception e){
             System.out.println("Sunucu4 Bozuk");
         }
-
     }
 
 }
