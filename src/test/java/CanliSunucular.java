@@ -14,7 +14,6 @@ public class CanliSunucular {
 @Test
     public void sunucu1() throws InterruptedException {
 
-    try {
     WebDriver driver = new ChromeDriver();
     driver.get(ConfigurationReader.getProperty("app1"));
     driver.manage().window().maximize();
@@ -35,15 +34,11 @@ public class CanliSunucular {
         Assert.assertEquals("SİSTEM HESABI - KOLAYSOFT TEKNİK",kolay);
         System.out.println("Giriş işlemi başarılı. Sunucu1 çalışıyor");
         driver.quit();
-    }catch (Exception e){
-        System.out.println("Sunucu1 Bozuk");
-    }
 }
 @Test
 
     public void sunucu2() throws InterruptedException {
 
-    try {
         WebDriver driver = new ChromeDriver();
         driver.get(ConfigurationReader.getProperty("app2"));
         driver.manage().window().maximize();
@@ -64,16 +59,11 @@ public class CanliSunucular {
         Assert.assertEquals("SİSTEM HESABI - KOLAYSOFT TEKNİK",kolay);
         System.out.println("Giriş işlemi başarılı. Sunucu2 çalışıyor");
         driver.quit();
-    }catch (Exception e){
-        System.out.println("Sunucu2 Bozuk");
-    }
 }
-
     @Test
 
     public void sunucu3() throws InterruptedException {
 
-        try {
             WebDriver driver = new ChromeDriver();
             driver.get(ConfigurationReader.getProperty("app3"));
             driver.manage().window().maximize();
@@ -88,17 +78,13 @@ public class CanliSunucular {
             giris.click();
             Thread.sleep(2000);
 
-
             WebElement sistem = driver.findElement(By.xpath("//span[contains(text(), \"SİSTEM\")]"));
             String kolay = sistem.getText();
             Assert.assertEquals("SİSTEM HESABI - KOLAYSOFT TEKNİK",kolay);
             System.out.println("Giriş işlemi başarılı. Sunucu3 çalışıyor");
             driver.quit();
-        }catch (Exception e){
-            System.out.println("Sunucu3 Bozuk");
-        }
-    }
 
+    }
     @Test
 
     public void sunucu4() throws InterruptedException {
@@ -116,7 +102,6 @@ public class CanliSunucular {
             WebElement giris = driver.findElement(By.xpath("//button[contains(text(), \"GİRİŞ\")]"));
             giris.click();
             Thread.sleep(2000);
-
 
             WebElement sistem = driver.findElement(By.xpath("//span[contains(text(), \"SİSTEM\")]"));
             String kolay = sistem.getText();
