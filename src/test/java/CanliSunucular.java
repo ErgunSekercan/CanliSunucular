@@ -129,9 +129,9 @@ public class CanliSunucular {
         giris.click();
         Thread.sleep(2000);
 
-        WebElement sistem = driver.findElement(By.xpath("//span[contains(text(), \"SİSTEM\")]"));
+        WebElement sistem = driver.findElement(By.xpath("//span[contains(text(), \"Kolaysoft\")]"));
         String kolay = sistem.getText();
-        Assert.assertEquals("Kolaysoft Teknoloji A.Ş",kolay);
+        Assert.assertEquals("KOLAYSOFT TEKNOLOJI A.Ş",kolay);
         System.out.println("Giriş işlemi başarılı. Test2 çalışıyor");
         driver.quit();
 
