@@ -32,7 +32,7 @@ public class CanliSunucular {
      WebElement sistem = driver.findElement(By.xpath("//span[contains(text(), \"SİSTEM\")]"));
      String kolay = sistem.getText();
         Assert.assertEquals("SİSTEM HESABI - KOLAYSOFT TEKNİK",kolay);
-        System.out.println("Giriş işlemi başarılı. Sunucu1 çalışıyor");
+        System.out.println("Giris islemi basarili. Sunucu1 calisiyor");
         driver.quit();
 }
 @Test
@@ -57,7 +57,7 @@ public class CanliSunucular {
         WebElement sistem = driver.findElement(By.xpath("//span[contains(text(), \"SİSTEM\")]"));
         String kolay = sistem.getText();
         Assert.assertEquals("SİSTEM HESABI - KOLAYSOFT TEKNİK",kolay);
-        System.out.println("Giriş işlemi başarılı. Sunucu2 çalışıyor");
+        System.out.println("Giris islemi basarili. Sunucu2 calisiyor");
         driver.quit();
 }
     @Test
@@ -81,7 +81,7 @@ public class CanliSunucular {
             WebElement sistem = driver.findElement(By.xpath("//span[contains(text(), \"SİSTEM\")]"));
             String kolay = sistem.getText();
             Assert.assertEquals("SİSTEM HESABI - KOLAYSOFT TEKNİK",kolay);
-            System.out.println("Giriş işlemi başarılı. Sunucu3 çalışıyor");
+            System.out.println("Giris islemi basarili. Sunucu3 calisiyor");
             driver.quit();
 
     }
@@ -106,7 +106,7 @@ public class CanliSunucular {
             WebElement sistem = driver.findElement(By.xpath("//span[contains(text(), \"SİSTEM\")]"));
             String kolay = sistem.getText();
             Assert.assertEquals("SİSTEM HESABI - KOLAYSOFT TEKNİK",kolay);
-            System.out.println("Giriş işlemi başarılı. Sunucu4 çalışıyor");
+            System.out.println("Giris islemi basarili. Sunucu4 calisiyor");
             driver.quit();
 
     }
@@ -132,7 +132,7 @@ public class CanliSunucular {
         WebElement sistem = driver.findElement(By.xpath("//span[contains(text(), \"Kolaysoft\")]"));
         String kolay = sistem.getText();
         Assert.assertEquals("KOLAYSOFT TEKNOLOJI A.Ş",kolay);
-        System.out.println("Giriş işlemi başarılı. Test2 çalışıyor");
+        System.out.println("Giris islemi basarili. Test2 calisiyor");
         driver.quit();
 
     }
