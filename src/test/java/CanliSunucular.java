@@ -111,4 +111,30 @@ public class CanliSunucular {
 
     }
 
+    @Test
+
+    public void test2() throws InterruptedException {
+
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://peyktest2.kolaysoft.com.tr/accounting/login");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement username = driver.findElement(By.xpath("//input[@id='username']"));
+        username.sendKeys("111111444");
+        Thread.sleep(2000);
+        WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
+        password.sendKeys("1");
+        Thread.sleep(2000);
+        WebElement giris = driver.findElement(By.xpath("//button[contains(text(), \"GİRİŞ\")]"));
+        giris.click();
+        Thread.sleep(2000);
+
+        WebElement sistem = driver.findElement(By.xpath("//span[contains(text(), \"SİSTEM\")]"));
+        String kolay = sistem.getText();
+        Assert.assertEquals("Kolaysoft Teknoloji A.Ş",kolay);
+        System.out.println("Giriş işlemi başarılı. Test2 çalışıyor");
+        driver.quit();
+
+    }
+
 }
