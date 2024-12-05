@@ -137,4 +137,30 @@ public class CanliSunucular {
 
     }
 
+    @Test
+
+    public void peyk_iga() throws InterruptedException {
+
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://peyk-iga.kolaysoft.com.tr/accounting/login");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement username = driver.findElement(By.xpath("//input[@id='username']"));
+        username.sendKeys("peykmssql");
+        Thread.sleep(2000);
+        WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
+        password.sendKeys("1");
+        Thread.sleep(2000);
+        WebElement giris = driver.findElement(By.xpath("//button[contains(text(), \"GİRİŞ\")]"));
+        giris.click();
+        Thread.sleep(2000);
+
+        WebElement sistem1 = driver.findElement(By.xpath("//span[contains(text(), \"SİSTEM\")]"));
+        String igaSistem = sistem1.getText();
+        Assert.assertEquals("SİSTEM",igaSistem);
+        System.out.println("Giris islemi basarili. Peyk-iga calisiyor");
+        driver.quit();
+
+    }
+
 }
