@@ -113,10 +113,10 @@ public class CanliSunucular {
 
     @Test
 
-    public void test2() throws InterruptedException {
+    public void test1() throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
-        driver.get("https://peyktest2.kolaysoft.com.tr/accounting/login");
+        driver.get("https://peyktest.kolaysoft.com.tr/accounting/login");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         WebElement username = driver.findElement(By.xpath("//input[@id='username']"));
