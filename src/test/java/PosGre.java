@@ -169,13 +169,19 @@ public class PosGre extends Driver1{
     peyk_pages.musteriIslemleri.click();
     BrowserUtils.waitFor(1);
 
+    peyk_pages.vknTckn1.sendKeys("3522339122");
+    BrowserUtils.waitFor(1);
+
+    peyk_pages.aramaYap1.click();
+    BrowserUtils.waitFor(1);
+
     peyk_pages.seciniz.click();
     BrowserUtils.waitFor(1);
 
     peyk_pages.kullaniciPortalinaGit.click();
     BrowserUtils.waitFor(1);
 
-    peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+    peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
     BrowserUtils.waitFor(1);
     Robot robot1 = new Robot();
     robot1.keyPress(KeyEvent.VK_ENTER);
@@ -207,13 +213,19 @@ public class PosGre extends Driver1{
         peyk_pages.musteriIslemleri.click();
         BrowserUtils.waitFor(1);
 
+        peyk_pages.vknTckn1.sendKeys("3522339122");
+        BrowserUtils.waitFor(1);
+
+        peyk_pages.aramaYap1.click();
+        BrowserUtils.waitFor(1);
+
         peyk_pages.seciniz.click();
         BrowserUtils.waitFor(1);
 
         peyk_pages.kullaniciPortalinaGit.click();
         BrowserUtils.waitFor(1);
 
-        peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+        peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
         BrowserUtils.waitFor(1);
         Robot robot1 = new Robot();
         robot1.keyPress(KeyEvent.VK_ENTER);
@@ -233,9 +245,9 @@ public class PosGre extends Driver1{
         //Form
         peyk_pages.anaSayfa.click();
         BrowserUtils.waitFor(3);
-        peyk_pages.taslakHazirla.click();
-        String form = peyk_pages.formuOnizle.getText();
-        Assert.assertEquals(form,"Formu Önizle");
+        peyk_pages.formGonder.click();
+        String form = peyk_pages.formGon.getText();
+        Assert.assertEquals(form,"Form Gönder");
         BrowserUtils.waitFor(3);
 
         //Taslak Hazırla
@@ -244,6 +256,14 @@ public class PosGre extends Driver1{
         peyk_pages.taslakHazirla.click();
         String form1 = peyk_pages.formuOnizle.getText();
         Assert.assertEquals(form1,"Formu Önizle");
+        BrowserUtils.waitFor(2);
+
+        //Özlük Form Onayı
+        peyk_pages.anaSayfa.click();
+        BrowserUtils.waitFor(2);
+        peyk_pages.ozlukFormOnayi.click();
+        String ozluk = peyk_pages.ozlukIslemleri.getText();
+        Assert.assertEquals(ozluk,"Özlük İşlemleri");
         BrowserUtils.waitFor(2);
 
         //Aylık Bildirimler-Bordro Arşiv
@@ -285,13 +305,19 @@ public class PosGre extends Driver1{
         peyk_pages.musteriIslemleri.click();
         BrowserUtils.waitFor(1);
 
+        peyk_pages.vknTckn1.sendKeys("3522339122");
+        BrowserUtils.waitFor(1);
+
+        peyk_pages.aramaYap1.click();
+        BrowserUtils.waitFor(1);
+
         peyk_pages.seciniz.click();
         BrowserUtils.waitFor(1);
 
         peyk_pages.kullaniciPortalinaGit.click();
         BrowserUtils.waitFor(1);
 
-        peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+        peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
         BrowserUtils.waitFor(1);
         Robot robot1 = new Robot();
         robot1.keyPress(KeyEvent.VK_ENTER);
@@ -342,13 +368,20 @@ public class PosGre extends Driver1{
         peyk_pages.musteriIslemleri.click();
         BrowserUtils.waitFor(1);
 
+        peyk_pages.vknTckn1.sendKeys("" +
+                "");
+        BrowserUtils.waitFor(1);
+
+        peyk_pages.aramaYap1.click();
+        BrowserUtils.waitFor(1);
+
         peyk_pages.seciniz.click();
         BrowserUtils.waitFor(1);
 
         peyk_pages.kullaniciPortalinaGit.click();
         BrowserUtils.waitFor(1);
 
-        peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+        peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
         BrowserUtils.waitFor(1);
         Robot robot1 = new Robot();
         robot1.keyPress(KeyEvent.VK_ENTER);
@@ -395,6 +428,8 @@ public class PosGre extends Driver1{
         peyk_pages.departmanKodu.sendKeys("001");
         BrowserUtils.waitFor(2);
         peyk_pages.kaydet4.click();
+        BrowserUtils.waitFor(2);
+        peyk_pages.ikinciSayfa.click();
         BrowserUtils.waitFor(2);
         peyk_pages.departmanSil.click();
         BrowserUtils.waitFor(2);
@@ -554,9 +589,9 @@ public class PosGre extends Driver1{
         BrowserUtils.waitFor(2);
         peyk_pages.calisanSec.click();
         BrowserUtils.waitFor(2);
-        peyk_pages.baslangicTarihi.sendKeys("07-01-2025");
+        peyk_pages.baslangicTarihi.sendKeys("07-02-2025");
         BrowserUtils.waitFor(1);
-        peyk_pages.bitisTarihi.sendKeys("09-01-2025");
+        peyk_pages.bitisTarihi.sendKeys("09-02-2025");
         BrowserUtils.waitFor(2);
         peyk_pages.aramaYap.click();
         BrowserUtils.waitFor(2);
@@ -571,7 +606,7 @@ public class PosGre extends Driver1{
         BrowserUtils.waitFor(2);
         peyk_pages.yeniOlustur.click();
         BrowserUtils.waitFor(2);
-        peyk_pages.belgeTuruSeciniz.sendKeys("BİLDİRİM");
+        peyk_pages.belgeTuruSeciniz.sendKeys("AKIŞ");
         //Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
@@ -712,13 +747,19 @@ public class PosGre extends Driver1{
         peyk_pages.musteriIslemleri.click();
         BrowserUtils.waitFor(1);
 
+        peyk_pages.vknTckn1.sendKeys("3522339122");
+        BrowserUtils.waitFor(1);
+
+        peyk_pages.aramaYap1.click();
+        BrowserUtils.waitFor(1);
+
         peyk_pages.seciniz.click();
         BrowserUtils.waitFor(1);
 
         peyk_pages.kullaniciPortalinaGit.click();
         BrowserUtils.waitFor(1);
 
-        peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+        peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
         BrowserUtils.waitFor(1);
         Robot robot1 = new Robot();
         robot1.keyPress(KeyEvent.VK_ENTER);
@@ -746,7 +787,7 @@ public class PosGre extends Driver1{
         peyk_pages.evet.click();
         BrowserUtils.waitFor(3);
 
-        peyk_pages.bordroPdfYukleyiniz.sendKeys("C:\\Users\\Kolaysoft\\IdeaProjects\\CanliSunucularinKontrolu\\SubaruForester_PosGre_Sezgin Kara.pdf");
+        peyk_pages.bordroPdfYukleyiniz.sendKeys("C:\\Users\\Kolaysoft\\IdeaProjects\\CanliSunucularinKontrolu\\AliVeli-66362170898.pdf");
         BrowserUtils.waitFor(2);
 
         peyk_pages.dokumanlariYukle.click();
@@ -812,13 +853,19 @@ public class PosGre extends Driver1{
         peyk_pages.musteriIslemleri.click();
         BrowserUtils.waitFor(1);
 
+        peyk_pages.vknTckn1.sendKeys("3522339122");
+        BrowserUtils.waitFor(1);
+
+        peyk_pages.aramaYap1.click();
+        BrowserUtils.waitFor(1);
+
         peyk_pages.seciniz.click();
         BrowserUtils.waitFor(1);
 
         peyk_pages.kullaniciPortalinaGit.click();
         BrowserUtils.waitFor(1);
 
-        peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+        peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
         BrowserUtils.waitFor(1);
         Robot robot1 = new Robot();
         robot1.keyPress(KeyEvent.VK_ENTER);
@@ -847,18 +894,13 @@ public class PosGre extends Driver1{
         BrowserUtils.waitFor(2);
         peyk_pages.calisanSecimi.click();
         BrowserUtils.waitFor(2);
-        peyk_pages.sezgin.click();
+        peyk_pages.aliVeli.click();
         BrowserUtils.waitFor(2);
         peyk_pages.kaydet.click();
         BrowserUtils.waitFor(2);
         peyk_pages.onayla.click();
-        BrowserUtils.waitFor(1);
-        peyk_pages.evet.click();
-        BrowserUtils.waitFor(1);
-        peyk_pages.onayla.click();
         BrowserUtils.waitFor(7);
-        //peyk_pages.tamam.click();
-        //BrowserUtils.waitFor(5);
+
         try {
             String pin = peyk_pages.pin.getText();
             BrowserUtils.waitFor(2);
@@ -910,7 +952,7 @@ public class PosGre extends Driver1{
         BrowserUtils.waitFor(2);
         peyk_pages.calisanSecimi.click();
         BrowserUtils.waitFor(2);
-        peyk_pages.sezgin2.click();
+        peyk_pages.aliVeli.click();
         BrowserUtils.waitFor(3);
         peyk_pages.kaydet.click();
         BrowserUtils.waitFor(2);
@@ -983,13 +1025,19 @@ public class PosGre extends Driver1{
         peyk_pages.musteriIslemleri.click();
         BrowserUtils.waitFor(1);
 
+        peyk_pages.vknTckn1.sendKeys("3522339122");
+        BrowserUtils.waitFor(1);
+
+        peyk_pages.aramaYap1.click();
+        BrowserUtils.waitFor(1);
+
         peyk_pages.seciniz.click();
         BrowserUtils.waitFor(1);
 
         peyk_pages.kullaniciPortalinaGit.click();
         BrowserUtils.waitFor(1);
 
-        peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+        peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
         BrowserUtils.waitFor(1);
         Robot robot1 = new Robot();
         robot1.keyPress(KeyEvent.VK_ENTER);
@@ -1040,13 +1088,19 @@ public class PosGre extends Driver1{
         peyk_pages.musteriIslemleri.click();
         BrowserUtils.waitFor(1);
 
+        peyk_pages.vknTckn1.sendKeys("3522339122");
+        BrowserUtils.waitFor(1);
+
+        peyk_pages.aramaYap1.click();
+        BrowserUtils.waitFor(1);
+
         peyk_pages.seciniz.click();
         BrowserUtils.waitFor(1);
 
         peyk_pages.kullaniciPortalinaGit.click();
         BrowserUtils.waitFor(1);
 
-        peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+        peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
         BrowserUtils.waitFor(1);
         Robot robot1 = new Robot();
         robot1.keyPress(KeyEvent.VK_ENTER);
@@ -1109,13 +1163,19 @@ public class PosGre extends Driver1{
         peyk_pages.musteriIslemleri.click();
         BrowserUtils.waitFor(1);
 
+        peyk_pages.vknTckn1.sendKeys("3522339122");
+        BrowserUtils.waitFor(1);
+
+        peyk_pages.aramaYap1.click();
+        BrowserUtils.waitFor(1);
+
         peyk_pages.seciniz.click();
         BrowserUtils.waitFor(1);
 
         peyk_pages.kullaniciPortalinaGit.click();
         BrowserUtils.waitFor(1);
 
-        peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+        peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
         BrowserUtils.waitFor(1);
         Robot robot1 = new Robot();
         robot1.keyPress(KeyEvent.VK_ENTER);
@@ -1148,7 +1208,7 @@ public class PosGre extends Driver1{
         BrowserUtils.waitFor(2);
 
         //Özlük Oluşturma
-        peyk_pages.tanimlar.click();
+        /*peyk_pages.tanimlar.click();
         BrowserUtils.waitFor(1);
         peyk_pages.formTanimlari.click();
         BrowserUtils.waitFor(2);
@@ -1233,16 +1293,16 @@ public class PosGre extends Driver1{
         peyk_pages.kaydet6.click();
         BrowserUtils.waitFor(2);
         peyk_pages.tamam.click();
-        BrowserUtils.waitFor(1);
+        BrowserUtils.waitFor(1);*/
 
         //Kırmızı Buton
-        peyk_pages.ozlukDosyalari.click();
+        //peyk_pages.ozlukDosyalari.click();
         BrowserUtils.waitFor(1);
         peyk_pages.kirmiziBtn.click();
         BrowserUtils.waitFor(2);
         peyk_pages.dosyaSec.sendKeys("C:\\Users\\Kolaysoft\\IdeaProjects\\CanliSunucularinKontrolu\\3_kişininMetni.pdf");
         BrowserUtils.waitFor(2);
-        peyk_pages.ozlukSecme.sendKeys("ÖZLÜK FORMU");
+        peyk_pages.ozlukSecme.sendKeys("Özlük Formu");
         peyk_pages.ozlukSecme.sendKeys(Keys.ENTER);
         BrowserUtils.waitFor(2);
         peyk_pages.yuklenecekYer.sendKeys("Doküman Satırı");
@@ -1253,7 +1313,7 @@ public class PosGre extends Driver1{
         BrowserUtils.waitFor(2);
         peyk_pages.degistir.click();
         BrowserUtils.waitFor(4);
-        peyk_pages.tamam.click();
+        //peyk_pages.tamam.click();
         BrowserUtils.waitFor(1);
 
         //Mavi Buton
@@ -1271,7 +1331,7 @@ public class PosGre extends Driver1{
         BrowserUtils.waitFor(1);
         peyk_pages.evet.click();
         BrowserUtils.waitFor(2);
-        peyk_pages.tamam.click();
+        //peyk_pages.tamam.click();
         BrowserUtils.waitFor(2);
 
         /*JavascriptExecutor js = (JavascriptExecutor) getDriver();
@@ -1300,13 +1360,19 @@ public class PosGre extends Driver1{
         peyk_pages.musteriIslemleri.click();
         BrowserUtils.waitFor(1);
 
+        peyk_pages.vknTckn1.sendKeys("3522339122");
+        BrowserUtils.waitFor(1);
+
+        peyk_pages.aramaYap1.click();
+        BrowserUtils.waitFor(1);
+
         peyk_pages.seciniz.click();
         BrowserUtils.waitFor(1);
 
         peyk_pages.kullaniciPortalinaGit.click();
         BrowserUtils.waitFor(1);
 
-        peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+        peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
         BrowserUtils.waitFor(1);
         Robot robot1 = new Robot();
         robot1.keyPress(KeyEvent.VK_ENTER);
@@ -1408,13 +1474,19 @@ public class PosGre extends Driver1{
         peyk_pages.musteriIslemleri.click();
         BrowserUtils.waitFor(1);
 
+        peyk_pages.vknTckn1.sendKeys("3522339122");
+        BrowserUtils.waitFor(1);
+
+        peyk_pages.aramaYap1.click();
+        BrowserUtils.waitFor(1);
+
         peyk_pages.seciniz.click();
         BrowserUtils.waitFor(1);
 
         peyk_pages.kullaniciPortalinaGit.click();
         BrowserUtils.waitFor(1);
 
-        peyk_pages.kullaniciSeciniz.sendKeys("admin_000003-Subaru Forester");
+        peyk_pages.kullaniciSeciniz.sendKeys("ergun_test");
         BrowserUtils.waitFor(1);
         Robot robot1 = new Robot();
         robot1.keyPress(KeyEvent.VK_ENTER);
@@ -1432,7 +1504,7 @@ public class PosGre extends Driver1{
         BrowserUtils.waitFor(2);
         peyk_pages.yetkilendirilecekPersonelSec.click();
         BrowserUtils.waitFor(2);
-        peyk_pages.kisiSeciniz.sendKeys("Sezgin");
+        peyk_pages.kisiSeciniz.sendKeys("Yıldırım");
         BrowserUtils.waitFor(3);
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_ENTER);
@@ -1455,12 +1527,67 @@ public class PosGre extends Driver1{
         peyk_pages.sil2.click();
         BrowserUtils.waitFor(2);
         peyk_pages.evet.click();
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(7);
         peyk_pages.tamam.click();
         BrowserUtils.waitFor(5);
 
         closeDriver();
+    }
+    @Test
+    public void Veli_Ali_Calisan_66362170898() throws AWTException {
 
+        Driver1.getDriver().get(ConfigurationReader.getProperty("env"));
+
+        peyk_pages.TcNo.sendKeys("66362170898");
+        peyk_pages.sifre.sendKeys("Aa,12345");
+        peyk_pages.giris.click();
+        BrowserUtils.waitFor(5);
+
+        peyk_pages.onayBekleyenler.click();
+        String onayBek = peyk_pages.onayBekleyenler.getText();
+        Assert.assertEquals(onayBek,"Onay Bekleyenler");
+        BrowserUtils.waitFor(3);
+
+        try {
+
+            if (peyk_pages.onayBekleyen1.isDisplayed()) {
+                peyk_pages.secOpsiyonu.click();
+                BrowserUtils.waitFor(2);
+                peyk_pages.sayfadakileriSec.click();
+                BrowserUtils.waitFor(2);
+                peyk_pages.tamam.click();
+                BrowserUtils.waitFor(2);
+                peyk_pages.secilenleriOnayla.click();
+                BrowserUtils.waitFor(3);
+                peyk_pages.evet.click();
+                BrowserUtils.waitFor(2);
+            }
+        }catch (Exception e){
+            System.out.println("Kayıt bulunamadı");
+        }
+        BrowserUtils.waitFor(2);
+
+        //Talep Formu Gönderme
+        peyk_pages.talepFormlariCalisan.click();
+        BrowserUtils.waitFor(2);
+        peyk_pages.yeniTalep.click();
+        BrowserUtils.waitFor(2);
+        peyk_pages.talepFormu.sendKeys("GÜNLÜK İZİN FORMU");
+        BrowserUtils.waitFor(2);
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        BrowserUtils.waitFor(2);
+        peyk_pages.sayiAlani.sendKeys("1");
+        BrowserUtils.waitFor(2);
+        peyk_pages.kaydetVeGonder.click();
+        BrowserUtils.waitFor(2);
+        peyk_pages.evet.click();
+        BrowserUtils.waitFor(3);
+        peyk_pages.tamam.click();
+        BrowserUtils.waitFor(3);
+
+        closeDriver();
     }
 
 
