@@ -64,6 +64,7 @@
                     <include>**/*IT.java</include>
                     <include>**/*Spec.java</include>
                     <include>**/*CanliSunucular.java</include>
+                    <include>**/*PosGre.java</include>
                 </includes>
             </configuration>
         </plugin>
