@@ -142,14 +142,14 @@ public class CanliSunucular {
     public void peyk_iga() throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
-        driver.get("https://peyk-iga.kolaysoft.com.tr/accounting/login");
+        driver.get("https://bordro.igairport.aero/accounting/login");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         WebElement username = driver.findElement(By.xpath("//input[@id='username']"));
-        username.sendKeys("peykmssql");
+        username.sendKeys("peykiga1");
         Thread.sleep(2000);
         WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
-        password.sendKeys("1");
+        password.sendKeys(">Kwq1$672?_t");
         Thread.sleep(2000);
         WebElement giris = driver.findElement(By.xpath("//button[contains(text(), \"GİRİŞ\")]"));
         giris.click();
